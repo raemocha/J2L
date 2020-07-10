@@ -1,0 +1,341 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-black;
+  border-color: $color-primary;
+  border-style: solid;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  &__image {
+    background-color: $color-black;
+    max-width: 100%;
+    background-size: cover;
+    opacity: 0.7;
+  }
+}
+
+.navbar {
+    position:fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1000;
+
+  ul {
+    width: 100%;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-black;
+
+    &:first-child {
+    }
+  }
+
+  li {
+    float: right;
+    height: 6rem;
+
+    &:first-child {
+      float: left;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    height: inherit;
+    color: $color-white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: $font-regular;
+
+    &:hover {
+      background-color: $color-primary;
+      color: #fff;
+    }
+  }
+
+  &__logo {
+    color: $color-primary;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+    }
+  }
+}
+
+.header-caption {
+  h1 {
+    font-size: $font-large;
+    color: $color-white;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+    width: 45%;
+    border-style: solid;
+    border-color: $color-primary;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-family: $font-paragraph;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+  }
+
+  h2 {
+    font-size: $font-regular;
+    color: $color-white;
+    position: absolute;
+    top: 80rem;
+    left: 25rem;
+    border-bottom-style: solid;
+    border-bottom-color: $color-primary;
+  }
+}
+
+.about {
+  &__grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+
+  &__content {
+    padding: 15rem 10rem 20rem 10rem;
+    background-color: $color-black;
+  }
+
+  &__header {
+    font-size: 7rem;
+    font-family: $font-heading;
+    text-align: left;
+    padding-bottom: 5rem;
+    color: $color-primary;
+    border-bottom-style: solid;
+  }
+
+  &__summary {
+    font-size: $font-small;
+    text-align: left;
+    font-family: $font-paragraph;
+    line-height: 2;
+    color: $color-white;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+
+  &__parallax {
+    background-image: url("../images/building-business-ceiling-empty-209251.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.services {
+  &__title {
+    text-align: center;
+    font-size: $font-large;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary,
+      $color-secondary
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 10rem;
+    // border-bottom-style: solid;
+    // border-bottom-color: $color-primary;
+  }
+  &__grid {
+    display: grid;
+    grid-column-gap: 15rem;
+    grid-template-columns: 40rem 40rem 40rem;
+    justify-content: center;
+    padding-bottom: 10rem;
+  }
+
+  &__grid-column {
+    text-align: left;
+    height: auto;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary,
+      $color-secondary
+    );
+    border-color: $color-white;
+    border-style: solid;
+    box-shadow: 3px 2px 25px black;
+    border-radius: 5px;
+  }
+
+  &__grid-image {
+    max-width: 100%;
+    padding-bottom: 2rem;
+    border-radius: 5px;
+  }
+
+  &__grid-header {
+    font-size: $font-medium;
+    font-family: $font-heading;
+    font-weight: 800;
+    padding-bottom: 2rem;
+    padding: 0 8rem;
+    text-align: center;
+  }
+
+  &__grid-text {
+    font-size: $font-small;
+    font-family: $font-paragraph;
+    padding: 4rem;
+  }
+}
+
+.services {
+  &__grid {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 0;
+  }
+
+  &__box {
+    height: 60rem;
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: all 0.5s;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__box-title {
+    margin: 1rem;
+    color: $color-white;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary,
+      $color-secondary
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 6rem;
+    font-family: $font-heading;
+    border-bottom-style: solid;
+    border-color: $color-primary;
+    width: 75%;
+    margin: 0 0 4rem 4rem;
+    padding-top: 5rem;
+  }
+
+  &__box-summary {
+    color: $color-white;
+    font-size: $font-small;
+    font-family: $font-paragraph;
+    line-height: 2;
+    margin: 1rem;
+    padding: 0 5rem;
+  }
+}
+
+.contact {
+  color: $color-white;
+  line-height: 2;
+
+  &__header-large {
+    text-align: center;
+    font-size: $font-large;
+    background-image: linear-gradient(
+      to bottom right,
+      $color-primary,
+      $color-secondary
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 0 25rem;
+    height: 100%;
+
+    &-right,
+    &-left {
+      padding: 5rem;
+    }
+  }
+
+  &__map {
+    margin: 0 12%;
+    height: 60rem;
+    width: 145rem;
+  }
+
+  &__header-small {
+    font-size: $font-medium;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__details {
+    font-size: $font-small;
+  }
+}
+
+.signup {
+  color: $color-white;
+  font-family: $font-paragraph;
+
+  form {
+  }
+
+  label {
+    font-size: $font-small;
+    font-weight: bold;
+    margin-bottom: 10rem;
+  }
+
+  input {
+    margin: 1rem 0 2rem 0;
+    width: 80%;
+    height: 2.5rem;
+    background-color: $color-black;
+    border-style: solid;
+    border-color: $color-white;
+    border-radius: 10px;
+    color: $color-white;
+    transition: ease-in-out, all 0.35s ease-in-out;
+
+    &:focus {
+      border-style: none none solid none;
+      border-bottom-color: $color-primary;
+      outline: none;
+    }
+
+    &[id="message"] {
+      height: 15rem;
+    }
+  }
+}

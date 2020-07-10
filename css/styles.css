@@ -1,0 +1,248 @@
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #000000;
+  border-color: #EA7500;
+  border-style: solid;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.header__image {
+  background-color: #000000;
+  max-width: 100%;
+  background-size: cover;
+  opacity: 0.7; }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  z-index: 1000; }
+  .navbar ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000; }
+  .navbar li {
+    float: right;
+    height: 6rem; }
+    .navbar li:first-child {
+      float: left; }
+  .navbar__link {
+    display: inline-block;
+    height: inherit;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2.5rem; }
+    .navbar__link:hover {
+      background-color: #EA7500;
+      color: #fff; }
+  .navbar__logo {
+    color: #EA7500; }
+    .navbar__logo:hover {
+      background-color: #fff;
+      color: #000000; }
+
+.header-caption h1 {
+  font-size: 10rem;
+  color: #fff;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  width: 45%;
+  border-style: solid;
+  border-color: #EA7500;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px; }
+
+.header-caption h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  position: absolute;
+  top: 80rem;
+  left: 25rem;
+  border-bottom-style: solid;
+  border-bottom-color: #EA7500; }
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  padding-bottom: 10rem; }
+
+.about__content {
+  padding: 15rem 10rem 20rem 10rem;
+  background-color: #000000; }
+
+.about__header {
+  font-size: 7rem;
+  font-family: "Lora", serif;
+  text-align: left;
+  padding-bottom: 5rem;
+  color: #EA7500;
+  border-bottom-style: solid; }
+
+.about__summary {
+  font-size: 1.8rem;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  color: #fff; }
+
+.about__img {
+  max-width: 100%; }
+
+.about__parallax {
+  background-image: url("../images/building-business-ceiling-empty-209251.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.services__title {
+  text-align: center;
+  font-size: 10rem;
+  background-image: linear-gradient(to bottom right, #EA7500, #FFCC7F);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10rem; }
+
+.services__grid {
+  display: grid;
+  grid-column-gap: 15rem;
+  grid-template-columns: 40rem 40rem 40rem;
+  justify-content: center;
+  padding-bottom: 10rem; }
+
+.services__grid-column {
+  text-align: left;
+  height: auto;
+  background-image: linear-gradient(to bottom right, #EA7500, #FFCC7F);
+  border-color: #fff;
+  border-style: solid;
+  box-shadow: 3px 2px 25px black;
+  border-radius: 5px; }
+
+.services__grid-image {
+  max-width: 100%;
+  padding-bottom: 2rem;
+  border-radius: 5px; }
+
+.services__grid-header {
+  font-size: 5rem;
+  font-family: "Lora", serif;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  padding: 0 8rem;
+  text-align: center; }
+
+.services__grid-text {
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  padding: 4rem; }
+
+.services__grid {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 0; }
+
+.services__box {
+  height: 60rem;
+  position: relative; }
+
+.services__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  transition: all 0.5s; }
+  .services__img:hover {
+    opacity: 1; }
+
+.services__box-title {
+  margin: 1rem;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #EA7500, #FFCC7F);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 6rem;
+  font-family: "Lora", serif;
+  border-bottom-style: solid;
+  border-color: #EA7500;
+  width: 75%;
+  margin: 0 0 4rem 4rem;
+  padding-top: 5rem; }
+
+.services__box-summary {
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+  margin: 1rem;
+  padding: 0 5rem; }
+
+.contact {
+  color: #fff;
+  line-height: 2; }
+  .contact__header-large {
+    text-align: center;
+    font-size: 10rem;
+    background-image: linear-gradient(to bottom right, #EA7500, #FFCC7F);
+    -webkit-background-clip: text;
+    color: transparent; }
+  .contact__grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    margin: 0 25rem;
+    height: 100%; }
+    .contact__grid-right, .contact__grid-left {
+      padding: 5rem; }
+  .contact__map {
+    margin: 0 12%;
+    height: 60rem;
+    width: 145rem; }
+  .contact__header-small {
+    font-size: 5rem;
+    margin: 0;
+    padding: 0; }
+  .contact__details {
+    font-size: 1.8rem; }
+
+.signup {
+  color: #fff;
+  font-family: "Montserrat", sans-serif; }
+  .signup label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10rem; }
+  .signup input {
+    margin: 1rem 0 2rem 0;
+    width: 80%;
+    height: 2.5rem;
+    background-color: #000000;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 10px;
+    color: #fff;
+    transition: ease-in-out, all 0.35s ease-in-out; }
+    .signup input:focus {
+      border-style: none none solid none;
+      border-bottom-color: #EA7500;
+      outline: none; }
+    .signup input[id="message"] {
+      height: 15rem; }
